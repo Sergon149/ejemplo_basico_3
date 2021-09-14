@@ -6,6 +6,16 @@ public class Main {
         learningChars();
         learningInt();
         learningFloat();
+        System.out.println(ejer1());
+        System.out.println(ejer2());
+        System.out.println(ejer3());
+
+        String texto1 = "1";
+        try{
+            Integer num1 = Integer.valueOf(texto1);
+        }catch (NumberFormatException e) {
+            e.printStackTrace();
+        }
     }
 
 
@@ -43,5 +53,19 @@ public class Main {
         myFloat = 100.09f;
         System.out.print("El valor ahora es: ");
         System.out.println(myFloat);
+    }
+    public static int ejer1(){
+        int myint = 2147483647;
+        return myint + 10;
+    }
+
+    public static int ejer2(){
+        int myint = 5;
+        return myint / 2;
+    }
+
+    public static float ejer3(){
+        int myint = 4874;
+        return myint / 3f;
     }
 }
